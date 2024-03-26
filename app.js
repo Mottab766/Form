@@ -1,3 +1,19 @@
+function verificaMarcacao() {
+  const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+  
+  checkboxes.forEach(checkbox => {
+      checkbox.addEventListener('change', () => {
+          if (checkbox.checked) {
+            checkbox.setAttribute('value', 'marcado');
+          } else {
+            checkbox.setAttribute('value', 'marcado');
+          }
+      });
+  });
+}
+
+verificaMarcacao()
+
 class FormSubmit {
   constructor(settings) {
     this.settings = settings;
@@ -63,3 +79,18 @@ const formSubmit = new FormSubmit({
   error: "<h1 class='error'>Não foi possível enviar sua mensagem.</h1>",
 });
 formSubmit.init();
+
+
+function verificaMarcacao() {
+  const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+  
+  checkboxes.forEach(checkbox => {
+      checkbox.addEventListener('change', () => {
+          if (checkbox.checked) {
+            checkbox.setAttribute('value', 'marcado');
+          } else {
+            checkbox.setAttribute('value', 'marcado');
+          }
+      });
+  });
+}
