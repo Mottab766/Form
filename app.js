@@ -74,12 +74,8 @@ function verificaMarcacao() {
   const checkboxes = document.querySelectorAll('input[type="checkbox"]');
   
   checkboxes.forEach(checkbox => {
-      checkbox.addEventListener('change', () => {
-          if (checkbox.checked) {
-            checkbox.setAttribute('value', 'marcado');
-          } else {
-            checkbox.remove();
-          }
-      });
+      if (!checkbox.checked) {
+        checkbox.remove();
+      }
   });
 }
