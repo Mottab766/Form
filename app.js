@@ -1,19 +1,3 @@
-function verificaMarcacao() {
-  const checkboxes = document.querySelectorAll('input[type="checkbox"]');
-  
-  checkboxes.forEach(checkbox => {
-      checkbox.addEventListener('change', () => {
-          if (checkbox.checked) {
-            checkbox.setAttribute('value', 'marcado');
-          } else {
-            checkbox.setAttribute('value', 'marcado');
-          }
-      });
-  });
-}
-
-verificaMarcacao()
-
 class FormSubmit {
   constructor(settings) {
     this.settings = settings;
@@ -23,6 +7,7 @@ class FormSubmit {
       this.url = this.form.getAttribute("action");
     }
     this.sendForm = this.sendForm.bind(this);
+
   }
 
   displaySuccess() {
@@ -67,7 +52,12 @@ class FormSubmit {
   }
 
   init() {
-    if (this.form) this.formButton.addEventListener("click", this.sendForm);
+    if (this.form) {
+      this.formButton.addEventListener("click", () => {
+        verificaMarcacao();
+        this.sendForm(event);
+      });
+    }
     return this;
   }
 }
@@ -79,7 +69,6 @@ const formSubmit = new FormSubmit({
   error: "<h1 class='error'>Não foi possível enviar sua mensagem.</h1>",
 });
 formSubmit.init();
-
 
 function verificaMarcacao() {
   const checkboxes = document.querySelectorAll('input[type="checkbox"]');
