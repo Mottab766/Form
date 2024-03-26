@@ -75,3 +75,16 @@ input[type="submit"] {
 input[type="submit"]:hover {
     background-color: #0056b3; /* Cor de fundo do botão ao passar o mouse */
 }
+
+.success,
+.error {
+  text-align: center;
+}
+
+.success {
+  color: greenyellow;
+}
+
+.error {
+  color: tomato;
+}
