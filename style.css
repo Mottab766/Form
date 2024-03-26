@@ -1,6 +1,7 @@
  :root{
-    --fundo: #ffdacb;
+    --fundo: #742a5d;
     --fonte: "Poppins", sans-serif;
+    --corfonte: #fff
 }
 
 /* Estilização geral */
@@ -11,16 +12,39 @@ body {
     background-color: var(--fundo) /* Cor de fundo da página */
 }
 
+.perguntas {
+    background: fixed;
+    background-color: #675077;
+    margin: 1% 20%;
+}
+
 h3 {
     font-family: var(--fonte);
     font-weight: 300;
     font-style: normal;
+    color: var(--corfonte);
+}
+
+h4 {
+    font-family: var(--fonte);
+    font-weight: 300;
+    font-style: normal;
+    color: var(--corfonte);
 }
 
 
+
 h1 {
+    text-align: center;
     font-family: var(--fonte);
     font-weight: 700;
+    color: var(--corfonte);
+
+}
+
+label {
+    color: var(--corfonte);
+
 }
 
 .container {
@@ -31,7 +55,7 @@ h1 {
 
 /* Estilização dos títulos de sessão */
 .titulosessao {
-    color: #333; /* Cor do texto */
+    color: var(--corfonte);
     margin-top: 20px;
 }
 
@@ -60,36 +84,38 @@ input[type="checkbox"] {
     align-content:center;
 }
 
-input[type="submit"] {
-    background-color: #007bff; /* Cor de fundo do botão */
+button {
+    background-color: #4924ad; /* Cor de fundo do botão */
     color: #fff; /* Cor do texto do botão */
     font-size: 20px;
-    padding: 20px 20px;
+    padding: 20px 50px;
     border: none;
-    border-radius: 5px;
+    border-radius: 99px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-
-}
-
-button:disabled {
+  }
+  
+  button:hover,
+  button:focus {
+    outline: none;
+    background: #5c1cd3;
+  }
+  
+  button:disabled {
     cursor: not-allowed;
     background: #555b69;
   }
-
-input[type="submit"]:hover {
-    background-color: #0056b3; /* Cor de fundo do botão ao passar o mouse */
-}
-
-.success,
-.error {
-  text-align: center;
-}
-
-.success {
-  color: greenyellow;
-}
-
-.error {
-  color: tomato;
-}
+  
+  .success,
+  .error {
+    text-align: center;
+  }
+  
+  .success {
+    color: greenyellow;
+  }
+  
+  .error {
+    color: tomato;
+  }
+  

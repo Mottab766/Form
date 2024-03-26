@@ -56,7 +56,12 @@ textarea:focus {
 
 label {
   margin-bottom: 0.5rem;
-  color: #84868f;
+  color: var(--corfonte);
+
+}
+
+input[type="checkbox"] {
+  color: var(--corfonte);
 }
 
 textarea {
