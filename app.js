@@ -89,8 +89,7 @@ function verificaMarcacao() {
           if (checkbox.checked) {
             checkbox.setAttribute('value', 'marcado');
           } else {
-            checkbox.removeAttribute('value');
-            checkbox.removeAttribute('name');;
+            checkbox.remove();
           }
       });
   });
