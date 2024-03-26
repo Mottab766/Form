@@ -72,6 +72,11 @@ input[type="submit"] {
 
 }
 
+button:disabled {
+    cursor: not-allowed;
+    background: #555b69;
+  }
+
 input[type="submit"]:hover {
     background-color: #0056b3; /* Cor de fundo do botão ao passar o mouse */
 }
