@@ -1,66 +1,49 @@
- :root{
+:root {
     --fundo: #742a5d;
     --fonte: "Poppins", sans-serif;
-    --corfonte: #fff
-}
-
-/* Estilização geral */
-body {
+    --corfonte: #fff;
+  }
+  
+  /* Estilização geral */
+  body {
     font-family: var(--fonte);
-    margin: 0 1rem 2rem 0;
+    margin: 0;
     padding: 0;
-    background-color: var(--fundo) /* Cor de fundo da página */
-}
+    background-color: var(--fundo); /* Cor de fundo da página */
+  }
 
-.perguntas {
-    background: fixed;
-    background-color: #675077;
-    margin: 1% 20%;
-}
-
-h3 {
-    font-family: var(--fonte);
-    font-weight: 300;
-    font-style: normal;
+  h1 {
     color: var(--corfonte);
-}
+  }
 
-h4 {
-    font-family: var(--fonte);
-    font-weight: 300;
-    font-style: normal;
+  h3 {
     color: var(--corfonte);
-}
+  }
 
-
-
-h1 {
-    text-align: center;
-    font-family: var(--fonte);
-    font-weight: 700;
+  h4 {
     color: var(--corfonte);
+  }
+  
+  label {
 
-}
+        color: var(--corfonte);
+ 
+  }
 
-label {
-    color: var(--corfonte);
-
-}
-
-.container {
+  .container {
     max-width: 800px;
-    margin: 0 auto;
+    margin: 0 1.3rem 0 0;
     padding: 20px;
-}
-
-/* Estilização dos títulos de sessão */
-.titulosessao {
+  }
+  
+  /* Estilização dos títulos de sessão */
+  .titulosessao {
     color: var(--corfonte);
     margin-top: 20px;
-}
-
-/* Estilização dos inputs de texto */
-input[type="text"] {
+  }
+  
+  /* Estilização dos inputs de texto */
+  input[type="text"] {
     font-family: var(--fonte);
     font-weight: 300;
     width: 100%;
@@ -68,21 +51,17 @@ input[type="text"] {
     margin-top: 5px;
     border: 1px solid #ccc; /* Cor da borda */
     border-radius: 5px;
-}
-
-/* Estilização dos checkboxes */
-
-
-/* Estilização do botão de submit */
-
-.campobotao {
+  }
+  
+  /* Estilização do botão de submit */
+  .campobotao {
     display: flex;
     align-items: center;
     justify-content: center;
-    align-content:center;
-}
-
-button {
+    align-content: center;
+  }
+  
+  button {
     background-color: #4924ad; /* Cor de fundo do botão */
     color: #fff; /* Cor do texto do botão */
     font-size: 20px;
@@ -115,5 +94,20 @@ button {
   
   .error {
     color: tomato;
+  }
+  
+  /* Estilos para dispositivos móveis */
+  @media only screen and (max-width: 600px) {
+    .container {
+      padding: 10px;
+    }
+  
+    .campobotao {
+      flex-direction: column;
+    }
+  
+    button {
+      margin-top: 10px;
+    }
   }
   
