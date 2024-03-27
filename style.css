@@ -1,11 +1,13 @@
  :root{
-    --fundo: #742a5d;
+    --fundo: url('./fundo.jpg');
+    --fundoCel: url('./fundo-cel.jpg');
     --fonte: "Poppins", sans-serif;
     --corfonte: #fff
 }
 
 /* Estilização geral */
 body {
+    background: var(--fundo);
     font-family: var(--fonte);
     margin: 0 1rem 2rem 0;
     padding: 0;
@@ -14,7 +16,8 @@ body {
 
 .perguntas {
     background: fixed;
-    background-color: #675077;
+    background: linear-gradient(to bottom, #4b4a4a, #727272, #555b69, #3b3f47);
+    ;
     margin: 1% 20%;
 }
 
@@ -83,7 +86,7 @@ input[type="text"] {
 }
 
 button {
-    background-color: #4924ad; /* Cor de fundo do botão */
+    background-color: #6c244c; /* Cor de fundo do botão */
     color: #fff; /* Cor do texto do botão */
     font-size: 20px;
     padding: 20px 50px;
@@ -96,7 +99,7 @@ button {
   button:hover,
   button:focus {
     outline: none;
-    background: #5c1cd3;
+    background: #94396b;
   }
   
   button:disabled {
@@ -121,16 +124,17 @@ button {
   
   /* Estilos para dispositivos móveis */
 @media only screen and (max-width: 600px) {
-    .body { 
+    body { 
         margin: 0;
-
+        background: linear-gradient(to bottom, #4b4a4a, #727272, #555b69, #3b3f47);
+        
     }
 
 
     .perguntas {
-        background: none;
         margin: 0 2%;
-
+        background: none;
+        
     }
   
     .campobotao {
